@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div style="background-color: rgba(170, 20, 20, 0.587);width: 500px;height: 800px;border-radius: 20px;">
+        <div style="display: flex;justify-content:flex-start;align-items: center;">
+            <div style="display: flex;justify-content:flex-start;align-items: center;">
+                <div style="margin-left: 20px;">
+                    <h1 id="bookTitle" style="color: white;">Book Title</h1>
+                </div>
+                <div style="margin-left: 200px;">
+                    <h4 style="color: white;">5th Edition</h4>
+                </div>
+            </div>
+        </div>
+        <div style="margin-left: 20px;">
+            <p style="color: white;">Book descriptionBook description
+                Book descriptionBook description
+                Book description</p>
+        </div>
+        <div style="margin-left: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Becoming_%28Michelle_Obama_book%29.jpg"
+                style="border-radius: 20px;" alt="The cover photo of the book">
+        </div>
+        <h4 id="author" style="color: white;">Book author</h4>
+        <h5 id="releaseDate" style="color: white;">Release Date</h5>
+    </div>
+</body>
+
+<script>
+    const book = {
+        "id": "417c6bd9-6c6b-4858-be90-2c3d5c5bd964",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "fiction",
+        "yearPublished": 1960,
+        "checkedOut": false,
+        "isPermanentCollection": false,
+        "createdAt": "2025-07-13T15:21:04.161Z"
+    };
+
+    const bookTitle = document.getElementById("bookTitle");
+    const author = document.getElementById("author");
+    const yearPublished = document.getElementById("releaseDate");
+
+    bookTitle.innerText = book.title;
+    author.innerText = book.author;
+    yearPublished.innerText = book.yearPublished;
+
+</script>
+
+</html>

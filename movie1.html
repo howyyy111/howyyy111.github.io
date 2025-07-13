@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<body>
+    <div style="background-color: bisque;width: 800px;height: 1150px;border-radius: 25px;">
+
+        <div style="display:flex;justify-content:flex-start;align-items: center;">
+            <div style="margin-left: 100px;">
+                <h1 id="movieTitle" style="color: rgb(5, 50, 90);">movieTitle</h1>
+            </div>
+            <div style="margin-left: 250px;">
+                <h2 id="genre" style="color: rgb(5, 50, 90);">genre</h2>
+            </div>
+        </div>
+
+        <img src="https://www.posterhub.com.sg/images/detailed/142/83_1A_1B.jpg"
+            style="width: 600px;height: 900px;border-radius:25px;margin-left:100px;">
+
+        <div>
+            <div style="display: flex;justify-content: flex-start;align-items: center;">
+                <div style="margin-left: 150px ;">
+                    <h4 id="actorName" style="color: rgb(5, 50, 90);">actorName</h4>
+                </div>
+                <div style="margin-left: 300px;">
+                    <h4 id="actressName" style="color: rgb(5, 50, 90);">actressName</h4>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-left: 360px;">
+            <h4 id="director" style="color: rgb(5, 50, 90);">director</h4>
+        </div>
+
+    </div>
+</body>
+<script>
+
+    const movie = {
+        "title": "Beyond Youthful Days",
+        "genre": "Drama",
+        "actorName": "Greg Han Hsu",
+        "actressName": "Kaya Kiyohara",
+        "director": "Michihito Fujii"
+    }
+    const movieTitle = document.getElementById("movieTitle");
+    const genre = document.getElementById("genre");
+    const actorName = document.getElementById("actorName");
+    const actressName = document.getElementById("actressName");
+    const director = document.getElementById("director");
+
+    movieTitle.innerText = movie.title;
+    genre.innerText = movie.genre;
+    actorName.innerText = movie.actorName;
+    actressName.innerText = movie.actressName;
+    director.innerText = movie.director;
+
+</script>
+</head>
+
+</html>
