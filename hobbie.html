@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="hobbie.css">
+    </head>
+    <body>
+        <div class="guessing">
+        <h1> guess his hobbie</h1>
+        <h2>here is the hobbies. choose 3</h2>
+            <div style="display:flex;justify-content: space-evenly;align-items:center;">
+                <div>
+                    <img src="image/eating.png" style="width: 200px;height: 200px;">
+                    <h4>eating</h4>
+                </div>
+                <div>
+                    <img src="image/playing.png" style="height:200px;width: 200px;">
+                    <h4>playing</h4>
+                </div>
+            </div>
+
+            <div style="display:flex;justify-content: space-evenly;align-items:center;">
+                <div>
+                    <img src="image/reading.png" style="width: 200px;height: 200px;">
+                    <h4>reading</h4>
+                </div>
+                <div>
+                    <img src="image/sleeping.png" style="height:200px;width: 200px;">
+                    <h4>sleeping</h4>
+                </div>
+            </div>
+
+            <div style="display:flex;justify-content: space-evenly;align-items:center;">
+                <div>
+                    <img src="image/studying.png" style="width: 200px;height: 200px;">
+                    <h4>studying</h4>
+                </div>
+                <div>
+                    <img src="image/swimming.png" style="height:200px;width: 200px;">
+                    <h4>swimming</h4>
+                </div>
+            </div>
+
+            <div id="inputSection">
+            <h2> here here</h2>
+            <input type="text" id="guessHobbie">
+            <button id="guessBtn"> guess </button>
+            </div>
+
+            <div id="resultSection">
+                <div class="final">
+                    <div> 
+                        <h3> guessAnswer </h3>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+        </div>
+    </body>
+    <script>
+        const guessHobbie = document.getElementById("guessHobbie");
+        const guessBtn = document.getElementById("guessBtn");
+
+        const resultSection = document.getElementById("resultSection")
+
+        guessBtn.onclick=()=> {
+            const data =  `<div class="final">
+                    <div> 
+                        <h3> ${guessHobbie.value} </h3>
+                    </div>
+                
+                </div>`
+            
+            resultSection.innerHTML = resultSection.innerHTML + data    
+
+
+        }
+
+
+
+
+    </script>
